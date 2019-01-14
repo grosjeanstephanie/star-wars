@@ -1,0 +1,35 @@
+h1{
+  font-family: arial;
+  font-style: italic;
+  color:black;
+  text-align: center;
+  text-decoration: underline;
+}
+p{
+  text-indent: 25px;
+  font-family: cursive;
+  font-size: 20px
+  text-align: right;
+}
+body{
+  background: white;
+  background-image:url("/home/grosjean/Images/ob_03a8b1_sakura-s-perfect-colours-by-jyoujo-d3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right top;
+  background-size: 1850px;
+}
+img{
+  width: 400px;
+  height: 300px;
+  border: 5px solid black;
+}
+blockquote{
+  font-family: fantasy;
+  font-style: italic;
+  font-size: 30px;
+  color: purple;
+  text-align: center;
+  text-decoration: underline;
+
+}
