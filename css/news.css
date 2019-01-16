@@ -1,0 +1,60 @@
+h1{
+  font-family: "Times New Roman", Times,sans-serif;
+  font-style: oblique;
+  color:Purple;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 60px
+}
+img {
+  animation: slidein 20s infinite;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 0%;
+  }
+
+  to {
+    margin-left: 100%;
+  }
+}
+#reglement{
+  font-size: 23px;
+  margin: auto;
+  padding-left: 350px;
+}
+p{
+  font-size: 23px;
+  font-style: normal;
+  width: 900px;
+  margin: auto;
+}
+body{
+  background: linear-gradient(White, Lightpink);
+  width: 1650px;
+  margin: auto;
+}
+h3{
+  color: Purple;
+  text-decoration: underline;
+  font-size: 25px;
+  text-align: center;
+  width: 900px;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+body>div{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#reseau{
+  font-size: 23px;
+  text-decoration: underline;
+  text-decoration-color: #CD5C5C;
+  margin: auto;
+  padding-left: 350px;
+}
+html{
+  height: 100%
+}
