@@ -1,0 +1,42 @@
+@charset "utf-8";
+#background{
+  background-image: url(../images/etoile.png);
+  background-size: 100%;
+}
+h1{
+  text-align: center;
+  color: yellow;
+}
+body{
+  background-color: Black;
+}
+p{
+  color: yellow;
+  font-size: 20px;
+  text-align: justify;
+}
+@keyframes textAnim {
+  0% {
+
+    transform: rotateX(20deg) translateY(250px);
+  }
+  90%{
+    opacity: 1;
+  }
+  99%{
+    transform: rotateX(20deg) translateY(-420px);
+  }
+  100%{
+    opacity: 0;
+  }
+}
+.wrapper{
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  perspective: 500px;
+}
+.content{
+  width: 60%;
+  animation: textAnim 20s;
+}
