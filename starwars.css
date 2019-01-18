@@ -1,42 +1,57 @@
 @charset "utf-8";
-#background{
-  background-image: url(../images/etoile.png);
-  background-size: 100%;
-}
 h1{
   text-align: center;
   color: yellow;
 }
 body{
-  background-color: Black;
+  background-image: url(../images/etoile.png);
 }
-p{
-  color: yellow;
-  font-size: 20px;
-  text-align: justify;
+@keyframes textIntro{
+  0% {
+    opacity: 1;
+  }
+  60%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;-
+  }
 }
 @keyframes textAnim {
-  0% {
 
-    transform: rotateX(20deg) translateY(250px);
+  0% {
+    opacity: 1;
+    transform: perspective(500px) rotateX(20deg) translateY(-125px);
   }
   90%{
     opacity: 1;
   }
   99%{
-    transform: rotateX(20deg) translateY(-420px);
+    transform: perspective(500px) rotateX(20deg) translateY(-420px);
   }
   100%{
     opacity: 0;
   }
 }
-.wrapper{
-  display: flex;
-  justify-content: center;
-  padding: 50px;
-  perspective: 500px;
+
+.intro {
+  color: cornflowerblue;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 50px;
+  padding-top: 100px;
+  opacity: 0;
+  animation-duration: 5s;
+  animation-name: textIntro;
 }
-.content{
-  width: 60%;
-  animation: textAnim 20s;
+
+.content {
+  text-align: justify;
+  color: yellow;
+  padding: 200px;
+  opacity: 0;
+  animation-duration: 20s;
+  animation-delay: 5s;
+  animation-name: textAnim;
 }
